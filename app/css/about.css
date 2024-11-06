@@ -1,0 +1,129 @@
+.about{
+   margin-top: clamp(50px, 2vw, 200px);
+   scroll-margin-top: 150px;
+}
+
+.about__box{
+   display: grid;
+   grid-template-columns: 50% 40%;
+   
+
+ 
+}
+.about__info,
+.about__images{
+flex:50% 1 1;
+
+}
+
+
+
+.about__title{
+   
+   margin-bottom: 60px;
+}
+.about__text{
+   margin-bottom: 60px;
+}
+.about__list{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 33px 50px;
+}
+.about__item{
+   font-weight: 600;
+   font-size: 18px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 20px;
+}
+.about__item::before{
+content: "";
+display: block;
+width: 30px;
+height: 30px;
+background-color: var(--bg-accent);
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+
+.box-img{
+   position: relative;
+   cursor: pointer;
+   max-height: 400px;
+   
+}
+
+.about__img{
+max-width: 350px;
+max-height: 400px;
+z-index: 2;
+position: absolute;
+left: 0;
+top: 0;
+transform: translate(0, 0);
+transition: transform 0.6s, filter 0.6s;
+
+
+}
+.about__img.active{
+   filter: brightness(0.3);
+  z-index: 1;
+  position: absolute;
+  transform: translate(20%, 20%);
+}
+
+.about__blockquote{
+   max-height: 313px;
+   padding: 50px 80px;
+   scroll-margin-top: 150px;
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+   border: 2px solid var(--col-text);
+   margin-top: 200px;
+
+}
+.blockquote__info,
+.blockquote__img{
+ width: 50%;
+}
+.blockquote__info{
+   position: relative;
+}
+
+.blockquote__info blockquote{
+  
+   
+font-size: 18px;
+padding-bottom: 25px;
+border-bottom: 2px solid var(--col-text);
+margin-bottom: 25px;
+}
+
+.blockquote__link{
+   color: var(--bg-accent) !important;
+   font-size: 18px;
+   font-weight: 700;
+  
+}
+.blockquote__img{
+   /* margin-left: auto; */
+   display: block;
+   width: 40%;
+   transform: scale(1.1);
+}
+
+
+
+.svg{
+   width: 150px;
+   fill: #fff;
+   opacity: 0.1;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translate(-20% ,-70%);
+}

@@ -1,0 +1,78 @@
+@import 'animate.css';
+
+.traks{
+   margin-top: 180px;
+   scroll-margin-top: 150px;
+}
+
+.taks__box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap:45px;
+}
+.traks__imag{
+   max-width: 510px;
+   max-height: 510px;
+   flex: 510px 1 1;
+   border-radius: 50%;
+   border: 15px solid #7a66cc85;
+   
+}
+
+.treks-border{
+   width: 75%;
+   max-width: 510px;
+   max-height: 510px;
+   border-radius: 50%;
+   border: 15px solid #7a66cc36;
+   
+}
+.treks-border.active{
+   animation: border 4s infinite linear ;
+}
+
+.traks__title,
+.traks__plaer{
+   margin-bottom: 60px;
+}
+.traks__list{
+   margin-bottom: 53px;
+   list-style-type: decimal-leading-zero
+}
+
+.traks__item{
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+
+.traks__item:last-child{
+   margin-bottom: 0;
+}
+.traks__item.active{
+   color: var(--bg-accent);
+}
+.folow{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 30px;
+}
+.folow__title{
+   font-weight: 600;
+   font-size: 24px;
+   margin-right: 10px;
+}
+.folow__link{
+   font-size: 14px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+}
+
+.folow__link>svg{
+   width: 30px;
+   height: 30px;
+}

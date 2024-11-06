@@ -1,0 +1,113 @@
+.dialog{
+   color: var(--col-text);
+   background-color: var(--bg-main);
+   border: 2px solid var(--bg-accent);
+   position:fixed;
+   margin: 0;
+   width: 400px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.dialog::backdrop{
+   background-color: rgb(0 0 0 / 0.8);
+}
+.dialog__iner{
+   padding: 50px;
+   text-align: center;
+   position: relative;
+}
+.dialog__iner p{
+   margin-bottom: 50px;
+}
+
+.close-modal{
+  
+   font-size: 20px;
+   padding: 5px 45px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+
+.close-modal svg{
+stroke: var(--bg-accent);
+width: 30px;
+height: 30px;
+}
+
+
+.scroll-block{
+   overflow: hidden;
+}
+
+.concert-list{
+   font-size: 18px;
+   color: var(--bg-accent);
+   cursor: pointer;
+}
+.concert-item{
+   margin-bottom: 15px;
+}
+.concert{
+   font-size: 24px;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+.concert__place{
+   font-size: 18px;
+   font-weight: 600;
+   opacity: 50%;
+   margin-bottom: 30px;
+}
+.concert-box{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap:20px;
+}
+.concert__date{
+   color: var(--bg-accent);
+   font-size: 18px;
+   font-weight: 600;
+}
+.places
+{
+   font-size: 16px;
+   font-weight: 600;
+}
+.quantity{
+   font-size: 18px;
+   font-weight: 600;
+}
+.places span{
+   font-size: 18px;
+   color: var(--bg-accent);
+}
+.cost-sum{
+   font-size: 34px;
+   color: var(--bg-accent);
+}
+
+.quantity{
+ border: 2px solid var(--bg-accent);
+ width: 80px;
+ padding: 10px;
+}
+
+.buy{
+   font-weight: 600;
+ font-size: 18px;
+ padding: 10px;
+ background-color:var(--bg-accent) ;
+}
+.buy:disabled{
+   opacity: 0.3;
+   cursor: none;
+}
+.info-box{
+   display: none;
+}
+.info-box.active{
+   display: block;
+}

@@ -1,0 +1,116 @@
+@import 'variables.css';
+
+
+@font-face {
+   font-family: Poppins, sans-serif ;
+   src: url("../fonts/Poppins-Regular.woff2") format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display:swap;
+}
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family: Poppins, sans-serif ;
+   padding: 0 10px;
+   color: var(--col-text);
+   background-color: var(--bg-main);
+   font-size: 16px;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   justify-content: space-between;
+}
+
+.conteiner{
+   max-width: 1110px;
+   margin: 0 auto;
+   
+}
+img, svg{
+   width: 100%;
+}
+
+h2{
+   font-weight: 700 !important;
+   font-size: 48px !important;
+  
+   
+}
+
+.logo1{
+   width: 60px;
+   height: 60px;
+}
+.logo2{
+   width: 143px;
+   height: 42px;
+}
+
+.border{
+   border-top-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+.m-top{
+   margin-top: 200px;
+}
+.p-top{
+   padding-top: 200px;
+}
+
+
+.plaer{
+   margin: 0 10px;
+   width: calc(100% - 20px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 45px;
+}
+.play{
+   flex: 25px 0 0 ;
+   height: 22px;
+}
+.play svg{
+   width: 100%;
+   height: 100%;
+   fill: #fff;
+}
+.progressbaar{
+   width: 100%;
+   height: 2px;
+   background-color: var(--col-text);
+   cursor: pointer;
+}
+.progress{
+   width: 0%;
+   height: 2px;
+   background-color: var(--bg-accent);
+   position: relative;
+}
+.progress::after{
+   content:'';
+   display: block;
+   width: 2px;
+   height: 10px;
+  background-color: var(--bg-accent);
+position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+}
+
+.time-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap:0px;
+}
+.in,
+.out{
+   display: block;
+   width: 50px;
+}
+

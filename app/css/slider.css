@@ -1,0 +1,100 @@
+.concers{
+   text-align: center;
+   margin-top: 180px;
+}
+.buy-box{
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.buy-box>h3{
+font-size: 24px;
+font-weight: 600;
+color: var(--bg-accent);
+}
+.swiper__box{
+   position:relative;
+}
+
+.swiper {
+   width: 85%;
+   margin: 0 auto;
+   position:static;
+ }
+ .swiper-wrapper{
+   position:static;
+ }
+
+ .swiper-slide{
+background-color: #2F2B2B;
+overflow: hidden;
+ }
+
+ .concers__img{
+   width: 100%;
+   /* max-width: 350px; */
+   max-height: 280px;
+   object-fit: cover;
+   margin-bottom: 30px;
+ }
+ 
+ .plece{
+   padding: 0 35px;
+   color: var(--col-text);
+   font-size: 18px;
+   font-weight: 700;
+   opacity: 50%;
+   margin-bottom: 20px;
+ }
+ .place2{
+   padding: 0 35px;
+   margin-bottom: 30px;
+   font-size: 18px;
+   font-weight: 500;
+ }
+ .date{
+padding-left: 35px;
+font-size: 16px;
+font-weight: 700;
+opacity: 50%;
+ }
+
+ .pay-ticket{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .pay-btn{
+   padding: 18px 52px;
+   font-size: 16px;
+   font-weight: 700;
+   background-color: var(--bg-accent);
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next{
+   width: 40px;
+   height: 60px;
+   border: 1px solid #fff;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+ .swiper-button-prev{
+   left: 30px;
+ }
+ .swiper-button-next{
+   right: 30px;
+ }
+
+ .swiper-button-prev::after,
+ .swiper-button-next::after{
+  color: #fff;
+  content: '';
+  display: block;
+ }
+ 
