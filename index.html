@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog class="dialog border">
+      <div class="dialog__iner">
+        <button class="close-modal" type="batton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill=""
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+        <ul class="concert-list">
+          <li id="001" class="concert-item">Chandler, AZ</li>
+          <li id="002" class="concert-item">Ibiza, IBZ</li>
+          <li id="003" class="concert-item">Ibiza, ADF</li>
+          <li id="004" class="concert-item">Ibiza, IBZ</li>
+          <li id="005" class="concert-item">Ibiza, ADF</li>
+          <li id="006" class="concert-item">Ibiza, ADF</li>
+        </ul>
+        <div class="info-box">
+          <h3 class="concert">d</h3>
+          <p class="concert__place">f</p>
+          <div class="concert-box">
+            <p class="concert__date">4</p>
+            <p class="places">
+              Remaining <span class="places-number">0</span> places
+            </p>
+          </div>
+          <div class="concert-box">
+            <input
+              class="quantity border"
+              type="number"
+              min="1"
+              max="10"
+              value="1"
+            />
+            <input type="hidden" class="hidden" />
+            <input type="hidden" class="hid-quant" />
+    
+            <div class="cost-sum">0 $</div>
+    
+            <button class="buy border">BUY</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    
+    <header class="header">
+      <div class="conteiner">
+        <div class="header__box">
+          <a class="header__logo" href="#">
+            <img class="logo1" src="./images/svg/logo1.svg" alt="" />
+            <img class="logo2" src="./images/svg/logo2.svg" alt="" />
+          </a>
+    
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#news" class="menu__link">News</a>
+              </li>
+              <li class="menu__item">
+                <a href="#music" class="menu__link">Music</a>
+              </li>
+              <li class="menu__item">
+                <a href="#media" class="menu__link">Media</a>
+              </li>
+              <li class="menu__item">
+                <a href="#tours" class="menu__link">Tours</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="open-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <section
+        class="home"
+        style="
+          background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.5) 0%,
+              rgba(28, 27, 33, 0.7) 92%
+            ),
+            url('./images/bg-header.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="conteiner">
+          <div class="header__singl">
+            <h2 class="header__title p-top">New Single</h2>
+            <figure class="plaer-box">
+              <figcaption>War For Love</figcaption>
+              <audio class="audio">
+                <source
+                  src="../media/Jay Walking - Everet Almond.mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+              <div class="plaer">
+                <button class="play">
+                  <svg
+                    width="22"
+                    height="25"
+                    viewBox="0 0 22 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 12.5L8.14564e-07 25L1.90735e-06 -9.6165e-07L22 12.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <div class="progressbaar">
+                  <div class="progress"></div>
+                </div>
+                <div class="time-box">
+                  <span class="in">00:00</span> - <span class="out"> 00:00</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="news-box">
+            <div class="news border">
+              <picture>
+                <source type="imege/avif" srcset="../images/news1.avif" />
+                <source type="imege/webp" srcset="../images/news1.webp" />
+      
+                <img src="../images/news1.jpg" alt="news1" />
+              </picture>
+              <div class="news-info border">
+                <p>
+                  Working on my upcoming full-lenth album that`s releasing later this
+                  year.
+                </p>
+              </div>
+            </div>
+            <div class="news border">
+              <picture>
+                <source type="imege/avif" srcset="../images/news2.avif" />
+                <source type="imege/webp" srcset="../images/news2.webp" />
+      
+                <img src="../images/news2.jpg" alt="news2" />
+              </picture>
+              <div class="news-info border">
+                <p>Halloween vibes. Listen my new track!</p>
+              </div>
+            </div>
+            <div class="news border">
+              <picture>
+                <source type="imege/avif" srcset="../images/news3.avif" />
+                <source type="imege/webp" srcset="../images/news3.webp" />
+      
+                <img src="../images/news3.jpg" alt="news3" />
+              </picture>
+              <div class="news-info border">
+                <p>WarForLove is OUT NOW!! Stream it here!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section class="about" id="about">
+      <div class="conteiner">
+        <div class="about__box ">
+          <div class="about__info">
+            <h2 class="about__title">Bright Lights</h2>
+            <div class="about__text">
+              <p>Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and
+              record producer. She has written for numerous pop stars including
+              Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has
+              amassed over 1 billion streams worldwide. More than 100 million of
+              those streams can be attributed to her artist career and include such
+              hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her
+              own single "Runaway." She was also a featured vocalist on Zedd's #1
+              Clarity album. Her latest music video, "Put It Down," reached 1
+              million streams in the first week, releasing independently. Bright
+              Lights is currently in the studio working on a self-produced album
+              slated for release in 2020.</p>
+            </div>
+            <ul class="about__list">
+             <li class="about__item">Based in: Los Angeles</li>
+             <li class="about__item">Genre: #DancePop </li>
+             <li class="about__item">Founded in 2011</li>
+             <li class="about__item">Label: 333 Recordings</li>
+          </div>
+          
+          <div class="about__images">
+            <div class="box-img">
+    
+             <picture>
+                <source type="imege/avif" srcset="../images/about2.avif">
+                <source type="imege/webp" srcset="../images/about2.webp">
+          
+                <img src="../images/about2.jpg" alt="about" class="border about__img">
+              </picture>
+              <picture>
+                <source type="imege/avif" srcset="../images/about1.avif">
+                <source type="imege/webp" srcset="../images/about1.webp">
+          
+                <img src="../images/about1.jpg" alt="about" class="border about__img active">
+              </picture>
+            </div>
+      
+          </div>
+        </div>
+    
+        <div class="about__blockquote border " id="news">
+    <div class="blockquote__info">
+           <blockquote>
+             “In an age where mainstream music is designed to be as
+    easily consumed as possible, listening to Bright Lights is
+    refreshing, to say the least. Her sound is perfect for radio
+    but complex enough to separate her from other pop newcomers.”
+           </blockquote>
+           <svg  class=" svg"xmlns="http://www.w3.org/2000/svg"  fill="none"   viewBox="0 0 16 16">
+             <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+           </svg>
+           
+           <a class="blockquote__link" href="#">PopULove.net</a>
+          </div>
+          <picture class="blockquote__img">
+             <source type="imege/avif" srcset="../images/about3.avif">
+             <source type="imege/webp" srcset="../images/about3.webp">
+       
+             <img src="../images/about3.jpg" alt="about" class="border ">
+           </picture>
+    
+        </div>
+        
+      </div>
+    </section>
+    
+<section class="traks" id="music">
+  <div class="conteiner">
+    <div class="taks__box">
+      <div class="treks-border">
+        <picture>
+          <source type="imege/avif" srcset="../images/traks.avif" />
+          <source type="imege/webp" srcset="../images/traks.webp" />
+
+          <img src="../images/traks.jpg" alt="trak" class="traks__imag" />
+        </picture>
+      </div>
+      <div class="traks__info">
+        <h2 class="traks__title">Last tracks</h2>
+        <figure class="traks__plaer">
+          <audio id="audio">
+            <source
+              src="../media/Jay Walking - Everet Almond.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+          <div class="plaer">
+            <button class="play" id="play">
+              <svg
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 12.5L8.14564e-07 25L1.90735e-06 -9.6165e-07L22 12.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <div class="progressbaar" id="progressbaar">
+              <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-box" id="time-box">
+              <span class="in" id="in">00:00</span> -
+              <span class="out" id="out"> 00:00</span>
+            </div>
+          </div>
+        </figure>
+        <ol class="traks__list">
+          <li
+            class="traks__item active"
+            data-text="../media/Things I Could Have Said - Adam MacDougall.mp3"
+          >
+            3LAU, Bright Lights — How You Love Me
+          </li>
+
+          <li
+            class="traks__item"
+            data-text="../media/Evil Bodega - Adam MacDougall.mp3"
+          >
+            Bright Lights, Kaleena Zanders, Kandy — War For Love
+          </li>
+          <li
+            class="traks__item"
+            data-text="../media/Blue Screen Of Death - The Soundlings.mp3"
+          >
+            Pink Is Punk, Benny Benassi, Bright Lights — Ghost
+          </li>
+          <li
+            class="traks__item"
+            data-text="../media/Between The Spaces - The Soundlings.mp3"
+          >
+            Hardwell, Dyro, Bright Lights — Never Say Goodbye
+          </li>
+          <li
+            class="traks__item"
+            data-text="../media/Q Train - Adam MacDougall.mp3"
+          >
+            Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now
+          </li>
+          <li
+            class="traks__item"
+            data-text="../media/Last Sunrise - Adam MacDougall.mp3"
+          >
+            Zedd, Bright Lights — Follow You Down
+          </li>
+        </ol>
+        <div class="folow">
+          <h3 class="folow__title">Follow me:</h3>
+          <a href="#" class="folow__link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_193)">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.66 0 12 0ZM17.521 17.34C17.281 17.699 16.861 17.82 16.5 17.58C13.68 15.84 10.14 15.479 5.939 16.439C5.521 16.561 5.16 16.26 5.04 15.9C4.92 15.479 5.22 15.12 5.58 15C10.14 13.979 14.1 14.4 17.22 16.32C17.64 16.5 17.699 16.979 17.521 17.34ZM18.961 14.04C18.66 14.46 18.12 14.64 17.699 14.34C14.46 12.36 9.54 11.76 5.76 12.96C5.281 13.08 4.74 12.84 4.62 12.36C4.5 11.88 4.74 11.339 5.22 11.219C9.6 9.9 15 10.561 18.72 12.84C19.081 13.021 19.26 13.62 18.961 14.04ZM19.081 10.68C15.24 8.4 8.82 8.16 5.16 9.301C4.56 9.48 3.96 9.12 3.78 8.58C3.6 7.979 3.96 7.38 4.5 7.199C8.76 5.939 15.78 6.179 20.221 8.82C20.76 9.12 20.94 9.84 20.64 10.38C20.341 10.801 19.62 10.979 19.081 10.68Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_193">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Spotify</a
+          >
+          <a href="#" class="folow__link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_188)">
+                <path
+                  d="M7.07799 23.55C6.60499 23.234 6.18499 22.847 5.83399 22.4C5.45099 21.937 5.09599 21.45 4.76999 20.946C4.00399 19.826 3.40499 18.601 2.98999 17.31C2.48999 15.808 2.24699 14.37 2.24699 12.963C2.24699 11.393 2.58699 10.023 3.24899 8.87302C3.73899 7.97302 4.46899 7.22002 5.34899 6.69102C6.19899 6.16102 7.18899 5.87102 8.18899 5.85102C8.53899 5.85102 8.91899 5.90102 9.31899 6.00102C9.60899 6.08102 9.95899 6.21102 10.389 6.37102C10.939 6.58102 11.239 6.71102 11.339 6.74102C11.659 6.86102 11.929 6.91102 12.139 6.91102C12.299 6.91102 12.529 6.86102 12.784 6.78102C12.929 6.73102 13.204 6.64102 13.594 6.47102C13.98 6.33102 14.286 6.21102 14.529 6.12102C14.899 6.01102 15.257 5.91102 15.579 5.86102C15.969 5.80102 16.356 5.78102 16.727 5.81102C17.437 5.86102 18.087 6.01102 18.667 6.23102C19.687 6.64102 20.51 7.28102 21.124 8.19102C20.864 8.35102 20.624 8.53702 20.399 8.74102C19.912 9.17102 19.499 9.68102 19.169 10.246C18.739 11.016 18.519 11.886 18.525 12.766C18.54 13.849 18.815 14.801 19.365 15.626C19.752 16.226 20.269 16.74 20.899 17.162C21.209 17.372 21.481 17.517 21.739 17.612C21.619 17.987 21.487 18.352 21.334 18.712C20.987 19.519 20.574 20.292 20.084 21.022C19.652 21.652 19.312 22.122 19.054 22.432C18.652 22.912 18.264 23.272 17.874 23.529C17.444 23.814 16.939 23.965 16.422 23.965C16.072 23.98 15.722 23.935 15.388 23.838C15.098 23.743 14.812 23.636 14.532 23.515C14.239 23.381 13.936 23.267 13.627 23.175C13.247 23.075 12.857 23.027 12.463 23.028C12.063 23.028 11.673 23.078 11.303 23.173C10.993 23.261 10.693 23.369 10.396 23.498C9.97599 23.673 9.70099 23.788 9.54099 23.838C9.21699 23.934 8.88499 23.992 8.55099 24.013C8.03099 24.013 7.54699 23.863 7.06499 23.563L7.07799 23.55ZM13.932 5.09002C13.252 5.43002 12.606 5.57402 11.959 5.52602C11.859 4.88002 11.959 4.21602 12.229 3.48902C12.469 2.86902 12.789 2.30902 13.229 1.80902C13.689 1.28902 14.239 0.859023 14.859 0.549023C15.519 0.209023 16.149 0.0290234 16.749 -0.000976562C16.829 0.679023 16.749 1.34902 16.499 2.06902C16.271 2.70902 15.931 3.29902 15.499 3.82902C15.064 4.34902 14.524 4.77902 13.913 5.08902L13.932 5.09002Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_188">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            iTunes
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <div class="gallary" id="tours">
+   <div class="conteiner">
+     <div class="gallery__box">
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery1.avif" />
+         <source type="imege/webp" srcset="../images/gallery1.webp" />
+ 
+         <img
+           src="../images/gallery1.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery2.avif" />
+         <source type="imege/webp" srcset="../images/gallery2.webp" />
+ 
+         <img
+           src="../images/gallery2.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery3.avif" />
+         <source type="imege/webp" srcset="../images/gallery3.webp" />
+ 
+         <img
+           src="../images/gallery3.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery4.avif" />
+         <source type="imege/webp" srcset="../images/gallery4.webp" />
+ 
+         <img
+           src="../images/gallery4.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery5.avif" />
+         <source type="imege/webp" srcset="../images/gallery5.webp" />
+ 
+         <img
+           src="../images/gallery5.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+ 
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery1.avif" />
+         <source type="imege/webp" srcset="../images/gallery1.webp" />
+ 
+         <img
+           src="../images/gallery1.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery2.avif" />
+         <source type="imege/webp" srcset="../images/gallery2.webp" />
+ 
+         <img
+           src="../images/gallery2.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery3.avif" />
+         <source type="imege/webp" srcset="../images/gallery3.webp" />
+ 
+         <img
+           src="../images/gallery3.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery4.avif" />
+         <source type="imege/webp" srcset="../images/gallery4.webp" />
+ 
+         <img
+           src="../images/gallery4.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+       <picture class="gallery__images">
+         <source type="imege/avif" srcset="../images/gallery5.avif" />
+         <source type="imege/webp" srcset="../images/gallery5.webp" />
+ 
+         <img
+           src="../images/gallery5.jpg"
+           alt="gallery1"
+           class="gallery__img border"
+         />
+         <p>EDC Las Vegas Mainstage</p>
+       </picture>
+     </div>
+   </div>
+ </div>
+ 
+    <!-- Slider main container -->
+    <div class="conteiner">
+      <div class="concers">
+        <div class="buy-box">
+          <h3>Buy ticket</h3>
+          <button class="open-modal buy border">open</button>
+        </div>
+        <div class="swiper__box">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide1.avif" />
+                  <source type="imege/webp" srcset="../images/slide1.webp" />
+    
+                  <img
+                    src="../images/slide1.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide2.avif" />
+                  <source type="imege/webp" srcset="../images/slide2.webp" />
+    
+                  <img
+                    src="../images/slide2.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide3.avif" />
+                  <source type="imege/webp" srcset="../images/slide3.webp" />
+    
+                  <img
+                    src="../images/slide3.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide1.avif" />
+                  <source type="imege/webp" srcset="../images/slide1.webp" />
+    
+                  <img
+                    src="../images/slide1.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide2.avif" />
+                  <source type="imege/webp" srcset="../images/slide2.webp" />
+    
+                  <img
+                    src="../images/slide2.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide border">
+                <picture>
+                  <source type="imege/avif" srcset="../images/slide3.avif" />
+                  <source type="imege/webp" srcset="../images/slide3.webp" />
+    
+                  <img
+                    src="../images/slide3.jpg"
+                    alt="slide1"
+                    class="concers__img border"
+                  />
+                </picture>
+                <div class="concert__inf0">
+                  <p class="plece">Chandler, AZ</p>
+                  <p class="place2">The Park at Wild Horse Pass</p>
+                  <div class="pay-ticket">
+                    <span class="date">Apr 02 2021</span>
+                    <button class="pay-btn border">tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev border">
+              <svg
+                width="21"
+                height="8"
+                viewBox="0 0 21 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.646446 4.35356C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464468C4.02369 0.269205 4.34027 0.269205 4.53553 0.464468C4.7308 0.65973 4.7308 0.976312 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53554C4.34027 7.7308 4.02369 7.7308 3.82843 7.53554L0.646446 4.35356ZM21 4.5L1 4.5L1 3.5L21 3.5L21 4.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next border">
+              <svg
+                width="21"
+                height="8"
+                viewBox="0 0 21 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+
+      
+      </p>
+    </main>
+    <footer class="footer">
+      <div class="footer__conteiner">
+        <a class="footer__logo" href="#">
+          <img class="logo1" src="./images/svg/logo1.svg" alt="" />
+          <img class="logo2" src="./images/svg/logo2.svg" alt="" />
+        </a>
+    
+        <div class="footer__info">
+          <p class="info-name">Artist Management:</p>
+          <p class="info-text">Jake Henny</p>
+          <p class="info-name">EMAIL:</p>
+          <p class="info-text">jake@brightlightsofficial.com</p>
+        </div>
+        <div class="footer__social" id="media">
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_188)">
+                <path
+                  d="M7.07799 23.55C6.60499 23.234 6.18499 22.847 5.83399 22.4C5.45099 21.937 5.09599 21.45 4.76999 20.946C4.00399 19.826 3.40499 18.601 2.98999 17.31C2.48999 15.808 2.24699 14.37 2.24699 12.963C2.24699 11.393 2.58699 10.023 3.24899 8.87302C3.73899 7.97302 4.46899 7.22002 5.34899 6.69102C6.19899 6.16102 7.18899 5.87102 8.18899 5.85102C8.53899 5.85102 8.91899 5.90102 9.31899 6.00102C9.60899 6.08102 9.95899 6.21102 10.389 6.37102C10.939 6.58102 11.239 6.71102 11.339 6.74102C11.659 6.86102 11.929 6.91102 12.139 6.91102C12.299 6.91102 12.529 6.86102 12.784 6.78102C12.929 6.73102 13.204 6.64102 13.594 6.47102C13.98 6.33102 14.286 6.21102 14.529 6.12102C14.899 6.01102 15.257 5.91102 15.579 5.86102C15.969 5.80102 16.356 5.78102 16.727 5.81102C17.437 5.86102 18.087 6.01102 18.667 6.23102C19.687 6.64102 20.51 7.28102 21.124 8.19102C20.864 8.35102 20.624 8.53702 20.399 8.74102C19.912 9.17102 19.499 9.68102 19.169 10.246C18.739 11.016 18.519 11.886 18.525 12.766C18.54 13.849 18.815 14.801 19.365 15.626C19.752 16.226 20.269 16.74 20.899 17.162C21.209 17.372 21.481 17.517 21.739 17.612C21.619 17.987 21.487 18.352 21.334 18.712C20.987 19.519 20.574 20.292 20.084 21.022C19.652 21.652 19.312 22.122 19.054 22.432C18.652 22.912 18.264 23.272 17.874 23.529C17.444 23.814 16.939 23.965 16.422 23.965C16.072 23.98 15.722 23.935 15.388 23.838C15.098 23.743 14.812 23.636 14.532 23.515C14.239 23.381 13.936 23.267 13.627 23.175C13.247 23.075 12.857 23.027 12.463 23.028C12.063 23.028 11.673 23.078 11.303 23.173C10.993 23.261 10.693 23.369 10.396 23.498C9.97599 23.673 9.70099 23.788 9.54099 23.838C9.21699 23.934 8.88499 23.992 8.55099 24.013C8.03099 24.013 7.54699 23.863 7.06499 23.563L7.07799 23.55ZM13.932 5.09002C13.252 5.43002 12.606 5.57402 11.959 5.52602C11.859 4.88002 11.959 4.21602 12.229 3.48902C12.469 2.86902 12.789 2.30902 13.229 1.80902C13.689 1.28902 14.239 0.859023 14.859 0.549023C15.519 0.209023 16.149 0.0290234 16.749 -0.000976562C16.829 0.679023 16.749 1.34902 16.499 2.06902C16.271 2.70902 15.931 3.29902 15.499 3.82902C15.064 4.34902 14.524 4.77902 13.913 5.08902L13.932 5.09002Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_188">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_193)">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.66 0 12 0ZM17.521 17.34C17.281 17.699 16.861 17.82 16.5 17.58C13.68 15.84 10.14 15.479 5.939 16.439C5.521 16.561 5.16 16.26 5.04 15.9C4.92 15.479 5.22 15.12 5.58 15C10.14 13.979 14.1 14.4 17.22 16.32C17.64 16.5 17.699 16.979 17.521 17.34ZM18.961 14.04C18.66 14.46 18.12 14.64 17.699 14.34C14.46 12.36 9.54 11.76 5.76 12.96C5.281 13.08 4.74 12.84 4.62 12.36C4.5 11.88 4.74 11.339 5.22 11.219C9.6 9.9 15 10.561 18.72 12.84C19.081 13.021 19.26 13.62 18.961 14.04ZM19.081 10.68C15.24 8.4 8.82 8.16 5.16 9.301C4.56 9.48 3.96 9.12 3.78 8.58C3.6 7.979 3.96 7.38 4.5 7.199C8.76 5.939 15.78 6.179 20.221 8.82C20.76 9.12 20.94 9.84 20.64 10.38C20.341 10.801 19.62 10.979 19.081 10.68Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_193">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_183)">
+                <path
+                  d="M12 0C8.74 0 8.333 0.015 7.053 0.072C5.775 0.132 4.905 0.333 4.14 0.63C3.351 0.936 2.681 1.347 2.014 2.014C1.347 2.681 0.935 3.35 0.63 4.14C0.333 4.905 0.131 5.775 0.072 7.053C0.012 8.333 0 8.74 0 12C0 15.26 0.015 15.667 0.072 16.947C0.132 18.224 0.333 19.095 0.63 19.86C0.936 20.648 1.347 21.319 2.014 21.986C2.681 22.652 3.35 23.065 4.14 23.37C4.906 23.666 5.776 23.869 7.053 23.928C8.333 23.988 8.74 24 12 24C15.26 24 15.667 23.985 16.947 23.928C18.224 23.868 19.095 23.666 19.86 23.37C20.648 23.064 21.319 22.652 21.986 21.986C22.652 21.319 23.065 20.651 23.37 19.86C23.666 19.095 23.869 18.224 23.928 16.947C23.988 15.667 24 15.26 24 12C24 8.74 23.985 8.333 23.928 7.053C23.868 5.776 23.666 4.904 23.37 4.14C23.064 3.351 22.652 2.681 21.986 2.014C21.319 1.347 20.651 0.935 19.86 0.63C19.095 0.333 18.224 0.131 16.947 0.072C15.667 0.012 15.26 0 12 0ZM12 2.16C15.203 2.16 15.585 2.176 16.85 2.231C18.02 2.286 18.655 2.48 19.077 2.646C19.639 2.863 20.037 3.123 20.459 3.542C20.878 3.962 21.138 4.361 21.355 4.923C21.519 5.345 21.715 5.98 21.768 7.15C21.825 8.416 21.838 8.796 21.838 12C21.838 15.204 21.823 15.585 21.764 16.85C21.703 18.02 21.508 18.655 21.343 19.077C21.119 19.639 20.864 20.037 20.444 20.459C20.025 20.878 19.62 21.138 19.064 21.355C18.644 21.519 17.999 21.715 16.829 21.768C15.555 21.825 15.18 21.838 11.97 21.838C8.759 21.838 8.384 21.823 7.111 21.764C5.94 21.703 5.295 21.508 4.875 21.343C4.306 21.119 3.915 20.864 3.496 20.444C3.075 20.025 2.806 19.62 2.596 19.064C2.431 18.644 2.237 17.999 2.176 16.829C2.131 15.569 2.115 15.18 2.115 11.985C2.115 8.789 2.131 8.399 2.176 7.124C2.237 5.954 2.431 5.31 2.596 4.89C2.806 4.32 3.075 3.93 3.496 3.509C3.915 3.09 4.306 2.82 4.875 2.611C5.295 2.445 5.926 2.25 7.096 2.19C8.371 2.145 8.746 2.13 11.955 2.13L12 2.16ZM12 5.838C8.595 5.838 5.838 8.598 5.838 12C5.838 15.405 8.598 18.162 12 18.162C15.405 18.162 18.162 15.402 18.162 12C18.162 8.595 15.402 5.838 12 5.838ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16ZM19.846 5.595C19.846 6.39 19.2 7.035 18.406 7.035C17.611 7.035 16.966 6.389 16.966 5.595C16.966 4.801 17.612 4.156 18.406 4.156C19.199 4.155 19.846 4.801 19.846 5.595Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_183">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_198)">
+                <path
+                  d="M23.499 6.20305C23.3599 5.70456 23.0946 5.25038 22.7286 4.88442C22.3627 4.51847 21.9085 4.25313 21.41 4.11405C19.54 3.61305 12.01 3.61305 12.01 3.61305C12.01 3.61305 4.501 3.60305 2.611 4.11405C2.11257 4.25337 1.65852 4.51893 1.29274 4.88505C0.926966 5.25118 0.661841 5.70549 0.523001 6.20405C0.168211 8.11887 -0.00688381 10.0627 8.09741e-07 12.0101C-0.00557772 13.9504 0.169511 15.8871 0.523001 17.7951C0.66199 18.2934 0.927182 18.7475 1.29295 19.1135C1.65872 19.4794 2.11269 19.7448 2.611 19.8841C4.48 20.3861 12.011 20.3861 12.011 20.3861C12.011 20.3861 19.519 20.3861 21.41 19.8841C21.9086 19.7449 22.3629 19.4794 22.7288 19.1133C23.0948 18.7471 23.3601 18.2927 23.499 17.7941C23.8447 15.8857 24.0121 13.9494 23.999 12.0101C24.0136 10.0627 23.8462 8.11825 23.499 6.20205V6.20305ZM9.608 15.6031V8.40705L15.874 12.0111L9.608 15.6031Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_198">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_203)">
+                <path
+                  d="M23.954 4.56909C23.069 4.95809 22.124 5.22309 21.129 5.34409C22.143 4.73309 22.923 3.77009 23.292 2.62109C22.341 3.17609 21.287 3.58009 20.165 3.80509C19.269 2.84609 17.992 2.24609 16.574 2.24609C13.857 2.24609 11.654 4.44909 11.654 7.16309C11.654 7.55309 11.699 7.92809 11.781 8.28709C7.691 8.09409 4.066 6.13009 1.64 3.16109C1.213 3.88309 0.974 4.72209 0.974 5.63609C0.974 7.34609 1.844 8.84909 3.162 9.73209C2.355 9.70609 1.596 9.48409 0.934 9.11609V9.17709C0.934 11.5621 2.627 13.5511 4.88 14.0041C4.467 14.1151 4.031 14.1751 3.584 14.1751C3.27 14.1751 2.969 14.1451 2.668 14.0891C3.299 16.0421 5.113 17.4661 7.272 17.5061C5.592 18.8251 3.463 19.6111 1.17 19.6111C0.78 19.6111 0.391 19.5881 0 19.5441C2.189 20.9381 4.768 21.7531 7.557 21.7531C16.611 21.7531 21.556 14.2571 21.556 7.76709C21.556 7.55809 21.556 7.34709 21.541 7.13709C22.502 6.44809 23.341 5.57709 24.001 4.58909L23.954 4.56909Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_203">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_0_208)">
+                <path
+                  d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_208">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="copy">© 2020 DJ bright lights.</div>
+      </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
