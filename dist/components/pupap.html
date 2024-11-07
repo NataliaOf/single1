@@ -1,0 +1,50 @@
+<dialog class="dialog border">
+  <div class="dialog__iner">
+    <button class="close-modal" type="batton">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill=""
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+        />
+      </svg>
+    </button>
+    <ul class="concert-list">
+      <li id="001" class="concert-item">Chandler, AZ</li>
+      <li id="002" class="concert-item">Ibiza, IBZ</li>
+      <li id="003" class="concert-item">Ibiza, ADF</li>
+      <li id="004" class="concert-item">Ibiza, IBZ</li>
+      <li id="005" class="concert-item">Ibiza, ADF</li>
+      <li id="006" class="concert-item">Ibiza, ADF</li>
+    </ul>
+    <div class="info-box">
+      <h3 class="concert">d</h3>
+      <p class="concert__place">f</p>
+      <div class="concert-box">
+        <p class="concert__date">4</p>
+        <p class="places">
+          Remaining <span class="places-number">0</span> places
+        </p>
+      </div>
+      <div class="concert-box">
+        <input
+          class="quantity border"
+          type="number"
+          min="1"
+          max="10"
+          value="1"
+        />
+        <input type="hidden" class="hidden" />
+        <input type="hidden" class="hid-quant" />
+
+        <div class="cost-sum">0 $</div>
+
+        <button class="buy border">BUY</button>
+      </div>
+    </div>
+  </div>
+</dialog>
