@@ -1,17 +1,18 @@
 {
-  "name": "gulp-start",
+  "name": "single1",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "type": "module",
+  "homepage": " https://nataliaof.github.io/single1",
   
   "scripts": {
-   
+   "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    
+    "gh-pages": "^6.2.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
